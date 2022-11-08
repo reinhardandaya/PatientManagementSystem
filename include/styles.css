@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* HomePage Design */
+.homepage {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 100;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    color: #f44336;
+    text-align: right;
+    font-size: 40px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: azure;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border: 1px solid #f0ffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s; 
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: azure;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+.nav-links ul {
+    padding: 30px;
+}
+}
+
+/*--------login page---------*/
+
+.login {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/login.jpg);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: azure;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+    color: rgb(250, 246, 246);
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 70%;
+}
+
+.log1 {
+    margin: 10px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/admin.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    flex-basis: 40%;
+    
+}
+
+.log2{
+    margin: 10px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/hcp.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    flex-basis: 40%;
+}
+
+.log3 {
+    margin: 10px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/patient.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    flex-basis: 40%;
+    
+}
+
+@media(max-width: 700px) {
+    .row1 {
+        display: block;
+    }
+}
+
+input[type=text],
+input[type=password], input[type=date], input[type=email], input[type=tel] {
+  width: 85%;
+  padding: 20px 28px;
+  margin: 30px 0;
+  display: inline-block;
+  box-sizing:content-box;
+  text-align: center;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid coral;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  font-family: 'Segoe UI';
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: 'Segoe UI';
+  text-align: center;
+}
+ 
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border: 1px solid #f0ffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 40px 1px;
+    width: 50%;
+}
+ 
+button:hover {
+    opacity: 0.4;
+}
+
+.Profile{
+    padding: 16px;
+    min-height: 100vh;
+    width: 99%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/patientlogin.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #4bb4b4;
+    text-align: center;
+}
