@@ -34,7 +34,7 @@ while ($row= mysqli_fetch_array($res)) {
         </div>
         <ul class="nav-links">
         <li>
-          <a href="#">
+          <a href="docpage.php">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -80,7 +80,7 @@ while ($row= mysqli_fetch_array($res)) {
       </div>
       <div class="profile-details">
        
-        <span class="admin_name">DOCTORS NAME/ID</span>
+        <span class="admin_name"><?php echo $name;?></span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
@@ -90,9 +90,9 @@ while ($row= mysqli_fetch_array($res)) {
         <div class="profile">
             <h2>MyProfile</h2>
             <input type="text" placeholder= "Name" name= "Doc_Name" value= <?php echo $name;?>>
-            <input type="text" placeholder= "ID" name= "Doc_Id">
-            <input type="text" placeholder= "Department" name= "Department_Id">
-            <input type="text" placeholder= "Hospital" name= "Hospital_Id">
+            <input type="text" placeholder= "ID" name= "Doc_Id" value= <?php echo $id;?>>
+            <input type="text" placeholder= "Department" name= "Department_Id" value= <?php echo $dept;?>>
+            <input type="text" placeholder= "Hospital" name= "Hospital_Id" value= <?php echo $hosp;?>>
         </div>
     </form>
     </section>
