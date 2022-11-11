@@ -32,13 +32,13 @@ session_start();
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="searchpatient.php">
             <i class='bx bx-list-ul' ></i>
             <span class="links_name">ViewPatient</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="addpatient.php" class="active">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">AddPatient</span>
           </a>
