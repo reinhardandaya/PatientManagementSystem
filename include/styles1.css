@@ -424,3 +424,15 @@ font-family: 'Segoe UI';
   }
 }
 
+
+.containerA {
+  padding-top: 100px;
+  margin: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/adminlogin.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  left: 100%;
+}
+
