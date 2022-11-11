@@ -15,8 +15,8 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">PATIENT</a></li>
-                    <li><a href="#">DOCTOR</a></li>
+                    <li><a href="adminpatient.php">PATIENT</a></li>
+                    <li><a href="admindoctor.php">DOCTOR</a></li>
                     <li><a href="#">DEPARTMENTS</a></li>
                     <li><a href="login.php">LOG OUT</a></li>
                 </ul>
